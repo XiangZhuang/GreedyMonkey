@@ -49,9 +49,9 @@ export default function getMaxFruitValueRecursion(
   const memory: Memory = new Array(fruits.length)
     .fill(null)
     .map(() =>
-      new Array(maxWeight)
+      new Array(maxWeight + 1)
         .fill(null)
-        .map(() => new Array(maxVolume).fill(undefined))
+        .map(() => new Array(maxVolume + 1).fill(undefined))
     );
   return recursion(fruits.length - 1, maxWeight, maxVolume, fruits, memory);
 }

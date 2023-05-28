@@ -1,7 +1,7 @@
 export type UserInput = {
   maxWeight: number;
   maxVolume: number;
-  fruits: Array<Fruit>;
+  fruits: ReadonlyArray<Fruit>;
 };
 
 export type Fruit = {
