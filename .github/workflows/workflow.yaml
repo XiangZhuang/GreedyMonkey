@@ -1,7 +1,7 @@
-name: Workflow
+name: test-workflow
 on: [push]
 jobs:
-  Build + Test:
+  build_test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
